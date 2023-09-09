@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .outer-box {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .inner-box {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 10px;
+            margin: 10px;
+            height:40px;
+            width:550px;
+            font-size:30px;
+        }
+        .inner-box-2 {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 10px;
+            margin: 10px;
+            height:70px;
+            font-size:15px;
+            line-height:0;
+        }
+        .inner-box-3 {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .sub-box {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .sub-box {
+            border: 2px solid rgb(207, 47, 47);
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .small-box-1 {
+            border: 2px solid rgb(207, 47, 47);
+            width: 60px;
+            height: 30px;
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+        .small-box-2 {
+            border: 2px solid rgb(207, 47, 47);
+            width: 50px;
+            height: 35px;
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .text {
+            margin: 10px;
+        }
+
+        .flex-row {
+            display: flex;
+            align-items: center;
+        }
+        .sub-box-container {
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(207, 47, 47);
+       }
+       .separator {
+            height: 5px;
+            background-color: rgb(230, 52, 52);
+            margin: 10px 0; 
+        }
+        .top-part,
+        .bottom-part {
+            flex: 1;
+            display: flex;
+            width:400px;
+            height:30px;
+        }
+        
+        .separator {
+            height: 4px;
+            background-color: rgb(229, 45, 45);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-box">
+            <div class="inner-box"><b>I'm a box</b></div>
+            <div class="inner-box-2"><p>I am also a box with some text in it..Lorem ipsum,dolor sit amet</p><p>consectetur adipiscing elit. Maecenas sit amet ex eget elit feugiat aliquet</p><p>elementum vel dolor. Sed pellentesque lacinia gravida. Nullam porttitor luctus volutpat.</p><p>Pellentesque malesuada orci dui, sit amet ornare</p></div>
+                <div class="inner-box-3">
+                <div class="sub-box-container">
+                   <div class="top-part">this list is a box</div>
+                    <div class="separator"></div>
+                    <div class="bottom-part">all the list items in it are boxes</div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <p>even</p>
+                <div class="small-box-1">buttons</div>
+                <p>and</p>
+                <div class="small-box-2"> <a href="#">links</a></div>
+                <p>are boxes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
