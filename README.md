@@ -29,3 +29,5 @@
 * top-part and .bottom-part: These styles set the list-style type to disc, which adds bullet points to the list items. They also use flex properties to divide the container into two equal parts.
 * separator: This style defines the appearance of the separator with a red background.
 
+# Hosted Link
+https://nikhitha5511.github.io/BoxModel/?authuser=0
